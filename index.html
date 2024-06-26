@@ -1,1 +1,158 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            color: #ff6f61;
+            text-align: center;
+        }
+        h3 {
+            color: #a561ff;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 10px;
+        }
+        form label {
+            margin-right: 10px;
+        }
+        form input[type="radio"] {
+            margin-right: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="text"]::placeholder {
+            color: #999;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MakeMyTrip</h1>
+        <hr>
+        <section>
+            <ul>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Homestays</a></li>
+                <li><a href="#">Trains</a></li>
+                <li><a href="#">Buses</a></li>
+                <li><a href="#">Cabs</a></li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <form>
+                <label for="one-way">One Way</label>
+                <input type="radio" id="one-way" name="trip-type">
+                <label for="round-trip">Round Trip</label>
+                <input type="radio" id="round-trip" name="trip-type">
+                <label for="multi-way">Multi Way</label>
+                <input type="radio" id="multi-way" name="trip-type">
+            </form>
+        </section>
+        <hr>
+        <section>
+            <p>From </p>
+            <h3>Delhi</h3>
+            <p>DEL, Delhi Airport India</p>
+            <p>To</p>
+            <h3>Bengaluru</h3>
+            <p>BLR, Bengaluru International Airport</p>
+            <p>Departure</p>
+            <h3>23 Jun'24</h3>
+            <p>Sunday</p>
+            <p>Return</p>
+            <h3>23 July'24</h3>
+            <p>Sunday</p>
+        </section>
+        <hr>
+        <section>
+            <p>Select a special fare</p>
+            <p>Extra savings</p>
+            <form>
+                <label for="regular-fares">Regular fares</label>
+                <input type="radio" id="regular-fares" name="fare-type">
+                <label for="student-discounts">Student extra discounts</label>
+                <input type="radio" id="student-discounts" name="fare-type">
+                <label for="senior-citizens">Senior citizens</label>
+                <input type="radio" id="senior-citizens" name="fare-type">
+            </form>
+        </section>
+        <hr>
+        <section>
+            <input type="text" placeholder="Search" name="search">
+            <p>Explore</p>
+        </section>
+        <hr>
+        <div>
+            <h2>Download app now</h2>
+            <p>Use code WELCOMEMMT and get FLAT 12% OFF* on your first domestic flight booking</p>
+            <label for="phone-number">Phone number</label>
+            <input type="text" id="phone-number" placeholder="Enter your phone number" name="phone-number">
+            <input type="text" placeholder="Get app link" name="link">
+        </div>
+        <hr>
+        <div class="footer">
+            <p>&copy; 2024 MakeMyTrip Pvt. Ltd.</p>
+            <p>Country: India | USA | UAE</p>
+        </div>
+    </div>
+</body>
+</html>
